@@ -33,7 +33,7 @@ namespace RestCalculatorService.Controllers
         //}
 
         // POST: api/Calculator/Add
-        [HttpGet("Add", Name = "Add")]
+        [HttpPut("Add", Name = "Add")]
         public int Addition([FromBody] Data data)
         {
             return data.getA + data.getB;
