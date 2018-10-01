@@ -26,12 +26,6 @@ namespace RestCalculatorService.Controllers
             return id;
         }
 
-        // POST: api/Calculator
-        //[HttpPost()]
-        //public void Post([FromBody]string value)
-        //{
-        //}
-
         // POST: api/Calculator/Add
         [HttpPost("Add", Name = "Add")]
         public int Addition([FromBody] Data data)
