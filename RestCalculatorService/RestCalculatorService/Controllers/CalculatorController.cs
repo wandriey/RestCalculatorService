@@ -21,9 +21,9 @@ namespace RestCalculatorService.Controllers
 
         // GET: api/Calculator/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        public int Get(int id)
         {
-            return "value";
+            return id;
         }
 
         // POST: api/Calculator
@@ -33,7 +33,7 @@ namespace RestCalculatorService.Controllers
         //}
 
         // POST: api/Calculator/Add
-        [HttpPut("Add", Name = "Add")]
+        [HttpPost("Add", Name = "Add")]
         public int Addition([FromBody] Data data)
         {
             return data.getA + data.getB;
